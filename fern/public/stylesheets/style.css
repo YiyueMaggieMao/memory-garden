@@ -4,8 +4,20 @@ body {
   background-color: blanchedalmond
 }
 
+h1 {
+  color: #ff5482;
+
 a {
   color: #00B7FF;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: yellow;
 }
 
 p {

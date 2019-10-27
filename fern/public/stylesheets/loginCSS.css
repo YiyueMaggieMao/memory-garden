@@ -1,14 +1,18 @@
+/*html{
+}*/
 body{
 	font-family: "Lucida Grande", Helvetica;
 	color: green;
 	background-color: blanchedalmond;
+	background-image: url("../cache/garden-pathway.jpg");
+	background-size: cover;
 }
 
 h1{
 	font-size: 100px;
 	text-align: center;
 	font-family: "Lucida Grande", Helvetica;
-	color: orange;
+	color:#ffc266;
 }
 p{
 	font-size: 25px;
@@ -18,7 +22,7 @@ p{
 .input-fields{
 	font-family: Helvetica;
 	align-items: center;
-	background-color: gold;
+	background-color: #ffd699;
 	width: 350px;
 	height: 300px;
 	border: 2px solid tan;
@@ -35,6 +39,11 @@ p{
 	height: 300px;
 	display: block;
 	margin: 2px auto;
+}
+
+.style-break{
+	line-height: 5px;
+	margin-top: 3px;
 }
 
 label{

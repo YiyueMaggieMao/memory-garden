@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!--Firebase scripts-->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <form action="/users" method="post">
+        <label for="user-name"> User Name: </label>
+        <input type="text" name="user-name">
+
+        <label for="email-address"> Email Address: </label>
+        <input type="text" name="email-address">
+
+        <label for="password-first"> Password: </label>
+        <input type="password" name="password-first">
+
+        <label for="password-confirm"> Confirm Password: </label>
+        <input type="password" name="password-confirm">
+
+        <input type="submit" value="Submit">
+        <!--button onclick="createUser()">Sign Up</button-->
+    </form>
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyCqCe93WLs0HBzjpnSASjglXCPRtS_VVj8",
+            authDomain: "memory-garden.firebaseapp.com",
+            databaseURL: "https://memory-garden.firebaseio.com",
+            projectId: "memory-garden",
+            storageBucket: "memory-garden.appspot.com",
+            messagingSenderId: "869210082385",
+            appId: "1:869210082385:web:9da5e605a85b29d7e73c70",
+            measurementId: "G-TJBEDJL3DF"
+        };
+firebase.initializeApp(firebaseConfig);
+        /*var database = firebase.database();
+        var usersData = database.ref().child("users");
+
+        function createUser() {
+            var newUser = {
+                //"user_name": $('#user-name').val(),
+                //"email_address": $('#email-address').val(),
+                //"password": $('#password-first').val()
+                user_name: $('user-name').val(),
+                email_address: $('email-address').val(),
+                password: $('password-first').val()
+            };
+
+            usersData.push(newUser);
+        }*/
+        /*function createUser(){
+
+            $.ajax({
+                type: "POST",
+                url： "/users", 
+                user_name: $('user-name').val(),
+                email_address: $('email-address').val(),
+                password: $('password-first').val()
+            });
+        }*/
+    </script>
+</body>
+
+</html>

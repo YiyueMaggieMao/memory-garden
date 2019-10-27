@@ -6,18 +6,25 @@ body {
 
 h1 {
   color: #ff5482;
-
-a {
-  color: #00B7FF;
+  top:16px;
+  text-align:center;
+  margin:auto;
 }
 
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position:absolute;
+  top:16px;
+  right:16px;
+}
 
-    text-decoration: none;
-    color: yellow;
+a:hover, a:active {
+  background-color: red;
 }
 
 p {

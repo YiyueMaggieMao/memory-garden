@@ -1,10 +1,5 @@
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
-import * as firebase from "firebase/app";
-
-// Add the Firebase services that you want to use
-import "firebase/auth";
-import "firebase/firestore";
 
 const express = require('express');
 const http = require('http');
@@ -12,7 +7,6 @@ const app = express();
 const server = http.createServer(app);
 
 const bodyParser = require('body-parser');
-
 // Configurations for firebase
 var firebaseConfig = {
     apiKey: "AIzaSyCqCe93WLs0HBzjpnSASjglXCPRtS_VVj8",

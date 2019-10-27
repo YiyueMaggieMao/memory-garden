@@ -13,7 +13,7 @@ server.listen(port, '0.0.0.0', () => {
 
 // Default endpoint 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "/fern/index.html");
+    res.sendFile(__dirname + "/fern/public/index.html");
 });
 
 // Needed to process body parameters for POST requests
